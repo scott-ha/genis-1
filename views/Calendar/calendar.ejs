@@ -1,0 +1,38 @@
+            
+ <%- contentFor('HeaderCss') %>
+            
+ <!-- Full Calendar -->
+<link href="public/plugins/fullcalendar/css/fullcalendar.min.css" rel="stylesheet">
+            
+<%- contentFor('body') %>
+
+<div class="wrapper">
+    <div class="container-fluid">
+          
+        <div class="row">
+            <div class="col-12">
+                <div class="card m-b-30">
+                    <div class="card-body">
+                        <div id='calendar'></div>
+
+                        <div style='clear:both'></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div> <!-- end container-fluid -->
+</div>
+<!-- end wrapper -->
+
+
+ <%- contentFor('FooterJs') %>
+                <!--Full calendar-->
+<script src="public/plugins/jquery-ui/jquery-ui.min.js"></script>
+<script src="public/plugins/moment/moment.js"></script>
+<script src="public/plugins/fullcalendar/js/fullcalendar.min.js"></script>
+<script src="public/assets/pages/calendar-init.js"></script>
+
+          
+          
+          

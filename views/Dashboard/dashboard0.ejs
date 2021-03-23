@@ -1,0 +1,56 @@
+<%- contentFor('HeaderCss') %>
+<!-- perticular page css -->
+
+<%- contentFor('body') %>
+
+<div class="wrapper">
+  <div class="container-fluid">
+
+    <div class="row">
+      <div class="col-xl-6">
+        <div class="card m-b-20">
+          <div class="card-body">
+            <h4 class="mt-0 header-title">Chart</h4>
+            <div id="morris-area-example" class="dashboard-charts morris-charts"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-6">
+        <div class="card m-b-20">
+          <div class="card-body">
+
+            <h4 class="mt-0 header-title">chart</h4>
+            <div id="simple-pie" class="ct-chart ct-golden-section simple-pie-chart-chartist"></div>
+
+          </div>
+        </div>
+      </div> <!-- end col -->
+      <div class="col-lg-6">
+          <div class="card m-b-20">
+              <div class="card-body">
+
+                  <h4 class="mt-0 header-title">Bar Chart</h4>
+                  <div id="chart" class="ct-chart"></div>
+              </div>
+          </div>
+      </div> <!-- end col -->
+    </div>
+
+
+
+  </div> <!-- end container-fluid -->
+</div>
+<!-- end wrapper -->
+<%- contentFor('FooterJs') %>
+<!--Morris Chart-->
+<script src="public/plugins/morris/morris.min.js"></script>
+<script src="public/plugins/raphael/raphael-min.js"></script>
+<script src="public/assets/pages/dashboard.js"></script>
+<script src="public/plugins/chartist/js/chartist.min.js"></script>
+<script src="public/plugins/chartist/js/chartist-plugin-tooltip.min.js"></script>
+<script src="public/assets/pages/chartist.init.js"></script>
+<script src="public//plugins/d3/d3.min.js"></script>
+<script src="public//plugins/c3/c3.min.js"></script>
+<script src="public/assets/pages/c3-chart-init.js"></script>
